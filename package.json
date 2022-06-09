@@ -1,7 +1,7 @@
 {
 
   "name": "@klick-app/db-models",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Klick db-models",
   "main": "dist/index.js",
   "types": "dist-types/index.d.ts",
@@ -25,12 +25,16 @@
   },
   "exports": {
     ".": "./dist/index.js",
-    "./v1/*": "./dist/models/*.js"
+    "./v1/*": "./dist/models/*.js",
+    "./config/*": "./dist/config/*.js"
   },
   "typesVersions": {
     "*": {
       "v1/*": [
         "dist-types/models/*.d.ts"
+      ],
+      "config/*": [
+        "dist-types/config/*.d.ts"
       ]
     }
   },
