@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose'
-import { Status } from 'types/User'
+import { Status } from '../types/User'
 import { pointSchema } from './Point'
 
 const userSchema = new Schema(
