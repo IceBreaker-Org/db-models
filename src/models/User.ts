@@ -4,8 +4,7 @@ import { pointSchema } from './Point'
 
 const userSchema = new Schema(
   {
-    firstName: { type: String, required: true },
-    lastName: { type: String },
+    fullname: { type: String, required: true },
     pronoun: { type: String, default: 'no preference' },
     username: { type: String },
     password: { type: String, required: true },
