@@ -1,6 +1,6 @@
 export enum Status {
   offline = 'offline',
-  available = 'available',
+  online = 'online',
   busy = 'busy',
   blocked = 'blocked',
   deleted = 'deleted',

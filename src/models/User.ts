@@ -1,5 +1,6 @@
 import { Schema, model } from 'mongoose'
 import { Status } from '../types/User'
+import { metaSchema } from './Meta'
 import { pointSchema } from './Point'
 
 const userSchema = new Schema(
@@ -37,6 +38,7 @@ const userSchema = new Schema(
     image: { type: String },
     location: { type: pointSchema, index: '2dsphere' },
     showProfilePic: { type: Boolean, default: false },
+    meta: { type: metaSchema, required: false },
   },
   { timestamps: true },
 )
