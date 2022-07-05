@@ -8,7 +8,9 @@ export const pointSchema = new Schema(
       type: String,
       enum: ['Point'],
       required: true,
+      default: 'Point',
     },
+    // lng, lat
     coordinates: {
       type: [Number],
       required: true,
