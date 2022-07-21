@@ -3,7 +3,7 @@ import { Status } from '../types/Match'
 
 const userTonesSchema = new Schema(
   {
-    userId: { Type: Types.ObjectId, required: true, ref: 'User' },
+    userId: { type: Types.ObjectId, required: true, ref: 'User' },
     tone: {
       type: String,
       required: true,
