@@ -39,6 +39,7 @@ const userSchema = new Schema(
     location: { type: pointSchema, index: '2dsphere' },
     showProfilePic: { type: Boolean, default: false },
     meta: { type: metaSchema, required: false },
+    firebaseToken: { type: String, required: false },
   },
   { timestamps: true },
 )
