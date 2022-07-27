@@ -22,7 +22,7 @@ const matchSchema = new Schema(
     participants: { type: [Types.ObjectId], required: true, ref: 'User' },
     status: { type: String, default: Status.pending, required: true, enum: Status },
     rating: { type: Number, required: false },
-    userTones: { type: userTonesSchema, required: true },
+    userTones: { type: [userTonesSchema], required: true },
   },
   { timestamps: true },
 )
