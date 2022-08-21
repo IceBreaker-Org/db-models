@@ -1,11 +1,12 @@
 {
   "name": "@klick-app/db-models",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Klick db-models",
   "main": "dist/index.js",
   "types": "dist-types/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "bump:version": "npm version patch --no-git-tag-version",
     "prepare": "npm run build"
   },
   "repository": {
