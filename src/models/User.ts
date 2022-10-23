@@ -9,6 +9,7 @@ const userSchema = new Schema(
     pronoun: { type: String, default: 'no preference' },
     username: { type: String },
     password: { type: String, required: false },
+    nationality: { type: String, require: false },
     phone: {
       type: String,
       trim: true,

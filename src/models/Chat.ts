@@ -4,6 +4,7 @@ const chatSchema = new Schema(
   {
     participants: { type: [Types.ObjectId], required: true, ref: 'User' },
     isActive: { type: Boolean, required: true, default: true },
+    isSaved: { type: Boolean, required: true, default: false },
   },
   { timestamps: true },
 )
