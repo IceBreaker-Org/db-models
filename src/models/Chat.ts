@@ -13,7 +13,7 @@ const chatSchema = new Schema(
     matchId: { type: Types.ObjectId, require: true, ref: 'Match' },
     isActive: { type: Boolean, required: true, default: true },
     isSaved: { type: Boolean, required: true, default: false },
-    savedBy: { type: [savedByUserSchema], required: true },
+    savedBy: { type: [savedByUserSchema] },
   },
   { timestamps: true },
 )
