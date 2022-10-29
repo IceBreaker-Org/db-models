@@ -6,7 +6,7 @@ const userSchema = new Schema(
     user: { type: Types.ObjectId, required: true, ref: 'User' },
     accepted: { type: Boolean, required: true },
   },
-  { timestamps: false, _id: false },
+  { timestamps: true, _id: false },
 )
 
 const meetRequestSchema = new Schema(
