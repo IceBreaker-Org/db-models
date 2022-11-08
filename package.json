@@ -1,6 +1,6 @@
 {
   "name": "@klick-app/db-models",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Klick db-models",
   "main": "dist/index.js",
   "types": "dist-types/index.d.ts",

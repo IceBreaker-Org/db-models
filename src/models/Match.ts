@@ -17,10 +17,16 @@ const userTonesSchema = new Schema(
   { _id: false, timestamps: true },
 )
 
+const stageSchema = new Schema({
+  stage: { type: String, required: true },
+  endAt: { type: Date, required: true },
+})
+
 const matchSchema = new Schema(
   {
     participants: { type: [Types.ObjectId], required: true, ref: 'User' },
     status: { type: String, default: Status.pending, required: true, enum: Status },
+    stage: { type: stageSchema },
     rating: { type: Number, required: false },
     userTones: { type: [userTonesSchema], required: true },
   },
