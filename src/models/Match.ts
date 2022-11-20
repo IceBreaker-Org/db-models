@@ -29,6 +29,7 @@ const matchSchema = new Schema(
     stage: { type: stageSchema },
     rating: { type: Number, required: false },
     userTones: { type: [userTonesSchema], required: true },
+    qrCode: { type: String, required: true },
   },
   { timestamps: true },
 )
