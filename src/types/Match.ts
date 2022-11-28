@@ -4,4 +4,5 @@ export enum Status {
   pending = 'pending',
   done = 'done',
   cancelled = 'cancelled',
+  timedout = 'timedout',
 }
