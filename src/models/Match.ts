@@ -17,10 +17,13 @@ const userTonesSchema = new Schema(
   { _id: false, timestamps: true },
 )
 
-const stageSchema = new Schema({
-  stage: { type: String, required: true },
-  endAt: { type: Date, required: true },
-})
+const stageSchema = new Schema(
+  {
+    stage: { type: String, required: true },
+    endAt: { type: Date, required: true },
+  },
+  { timestamps: true, _id: false },
+)
 
 const matchSchema = new Schema(
   {

@@ -9,4 +9,4 @@ const reportSchema = new Schema(
   { timestamps: true },
 )
 
-export const Reported = model('Reported', reportSchema)
+export const Reported = model('Report', reportSchema)

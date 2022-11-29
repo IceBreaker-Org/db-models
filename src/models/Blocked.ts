@@ -8,4 +8,4 @@ const blockedSchema = new Schema(
   { timestamps: true },
 )
 
-export const Blocked = model('Blocked', blockedSchema)
+export const Blocked = model('Block', blockedSchema)
