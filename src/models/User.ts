@@ -41,6 +41,7 @@ const userSchema = new Schema(
     showProfilePic: { type: Boolean, default: false },
     meta: { type: metaSchema, required: false },
     firebaseToken: { type: String, required: false },
+    ssoToken: { type: String, required: false }
   },
   { timestamps: true },
 )
