@@ -13,15 +13,11 @@ const userSchema = new Schema(
     phone: {
       type: String,
       trim: true,
-      index: true,
-      unique: true,
       sparse: true,
     },
     email: {
       type: String,
       trim: true,
-      index: true,
-      unique: true,
       sparse: true,
     },
     isEmailVerified: { type: Boolean, default: false },
@@ -45,5 +41,8 @@ const userSchema = new Schema(
   },
   { timestamps: true },
 )
+
+userSchema.index({phone: 1, signupMethod: 1}, {unique: true})
+userSchema.index({email: 1, signupMethod: 1}, {unique: true})
 
 export const User = model('User', userSchema)
